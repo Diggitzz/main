@@ -1,7 +1,12 @@
 
 ---
+# git add *
+# git commit -m "Message hier"
+# git status  
+# git push
 
-# This a Ansible test script only allowed for testing!
+
+# This is a Ansible test script only allowed for testing!
 - hosts: localhost
   vars:
     - VM_Name: ""
