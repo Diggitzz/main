@@ -1,5 +1,7 @@
 
 ---
+
+# This a Ansible test script only allowed for testing!
 - hosts: localhost
   vars:
     - VM_Name: ""
