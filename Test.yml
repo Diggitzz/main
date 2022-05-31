@@ -8,7 +8,7 @@
     - OS: ""
     - Patch_Window: ""
     - Update_Source: ""
-    - ilionxManaged: ""
+    - Managed: ""
   tasks:
     - name: Hello message!
       debug:
@@ -30,4 +30,4 @@
         msg: "The update source is: {{ Update_Source }}"
     - name: Hello message!
       debug:
-        msg: "The ilionx managed status is: {{ ilionxManaged }}" 
+        msg: "The ilionx managed status is: {{ Managed }}" 
