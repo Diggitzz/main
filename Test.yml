@@ -1,21 +1,33 @@
+
 ---
 - hosts: localhost
   vars:
-    - Run_ID: ""
-    - next-logicapp: ""
-    - template_id: ""
-    - extra_vars: ""
+    - VM_Name: ""
+    - CustomerCode: ""
+    - Environment: ""
+    - OS: ""
+    - Patch_Window: ""
+    - Update_Source: ""
+    - ilionxManaged: ""
   tasks:
     - name: Hello message!
       debug:
-        msg: "The run ID is: {{ Run_ID }}"
+        msg: "The run ID is: {{ VM_Name }}"
     - name: Hello message!
       debug:
-        msg: "The next logic app is: {{ next-logicapp }}"
+        msg: "The next logic app is: {{ CustomerCode }}"
     - name: Hello message!
       debug:
-        msg: "The template ID is: {{ template_id }}" 
+        msg: "The template ID is: {{ Environment }}" 
     - name: Hello message!
       debug:
-        msg: "The extra vars is: {{ extra_vars }}"    
-        
+        msg: "The extra vars is: {{ OS }}"
+    - name: Hello message!
+      debug:
+        msg: "The run ID is: {{ Patch_Window }}"
+    - name: Hello message!
+      debug:
+        msg: "The next logic app is: {{ Update_Source }}"
+    - name: Hello message!
+      debug:
+        msg: "The template ID is: {{ ilionxManaged }}" 
