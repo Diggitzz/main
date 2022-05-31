@@ -1,8 +1,21 @@
 ---
 - hosts: localhost
   vars:
-    - text: ""   
+    - Run_ID: ""
+    - next-logicapp: ""
+    - template_id: ""
+    - extra_vars: ""
   tasks:
     - name: Hello message!
       debug:
-        msg: "Message: {{ text }}"       
+        msg: "The run ID is: {{ Run_ID }}"
+    - name: Hello message!
+      debug:
+        msg: "The next logic app is: {{ next-logicapp }}"
+    - name: Hello message!
+      debug:
+        msg: "The template ID is: {{ template_id }}" 
+    - name: Hello message!
+      debug:
+        msg: "The extra vars is: {{ extra_vars }}"    
+        
