@@ -1,0 +1,39 @@
+---
+# git add *
+# git commit -m "Message hier"
+# git status  
+# git push
+
+
+# This is a Ansible test script only allowed for testing!
+- hosts: localhost
+  vars:
+    - VM_Name: ""
+    - CustomerCode: ""
+    - Environment: ""
+    - OS: ""
+    - Patch_Window: ""
+    - Update_Source: ""
+    - Managed: ""
+  tasks:
+    - name: Hello message!
+      debug:
+        msg: "The VM Name is: {{ VM_Name }}"
+    - name: Hello message!
+      debug:
+        msg: "The CustomerCode is: {{ CustomerCode }}"
+    - name: Hello message!
+      debug:
+        msg: "The enviroment is {{ Environment }}" 
+    - name: Hello message!
+      debug:
+        msg: "The OS is: {{ OS }}"
+    - name: Hello message!
+      debug:
+        msg: "The patch window is: {{ Patch_Window }}"
+    - name: Hello message!
+      debug:
+        msg: "The update source is: {{ Update_Source }}"
+    - name: Hello message!
+      debug:
+        msg: "The ilionx managed status is: {{ Managed }}" 
